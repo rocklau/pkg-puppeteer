@@ -1,0 +1,13 @@
+{
+  "name": "pkg-puppeter",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "main": "index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7"
+  }
+}
