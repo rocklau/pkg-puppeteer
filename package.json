@@ -5,6 +5,10 @@
   "bin": {
     "main": "index.js"
   },
+  "scripts": {
+    "build": "rm -rf build && pkg . --out-path build",
+    "postbuild": "cp -R ./node_modules/puppeteer/.local-chromium build/chromium"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
