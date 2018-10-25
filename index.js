@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 const isPkg = typeof process.pkg !== 'undefined';
 
 //mac path replace
-const chromiumExecutablePath = (isPkg ?
+let chromiumExecutablePath = (isPkg ?
   puppeteer.executablePath().replace(
     /^.*?\/node_modules\/puppeteer\/\.local-chromium/,
     path.join(path.dirname(process.execPath), 'chromium')
